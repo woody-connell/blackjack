@@ -1,0 +1,45 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.page{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+} 
+
+#table{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 90vw;
+  background-image: url("https://external-preview.redd.it/BU1XBFqOHhO28CHdz2bofpGsPEQObf42kUjqaX7Eh10.jpg?auto=webp&s=6c4990b338bb00d678652ee7a6d9db1a5c6ca656");
+}
+
+.points{
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+/* Should I style my own buttons?? */
+
+.hand{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.hand img{
+  height: 50%;
+  z-index: 3;
+}
