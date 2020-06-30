@@ -167,28 +167,33 @@ document.getElementById("btnHit").addEventListener("click", function(){
   //hit botton logic
   if (cardsDealt == true && gameOver == false){
     drawCardPlayer();
+    updatePointsDealer(handValueDealer);
+    updatePointsPlayer(handValuePlayer);
+    }
     if (handValuePlayer > 21){
       updatePointsPlayer("Bust. You Lose.");
       gameOver = True;
       updatePointsDealer(handValueDealer);
+      updatePointsPlayer(handValuePlayer);
     }
   }
-});
 
 document.getElementById("btnStand").addEventListener("click", function(){
   //write stand logic here
   if (cardsDealt == true && gameOver == false){
     updatePointsDealer(handValueDealer);
+    updatePointsPlayer(handValuePlayer);
+    }
     if (handValuePlayer > 21){
+      updatePointsDealer(handValueDealer);
       updatePointsPlayer("Bust. You Lose.");
     }
     else if (handValuePlayer > handValueDealer){
+      updatePointsDealer(handValueDealer);
       updatePointsPlayer("You Win.");
     }
     else{
+      updatePointsDealer(handValueDealer);
       updatePointsPlayer("Dealer Wins. You Lose.");
     }
   }
-})
-
-
